@@ -4,12 +4,13 @@ import { isEmail } from 'validator'
 const button = document.querySelector('button')
 const input = document.querySelector('input')
 const resultado = document.getElementById('resultado')
+const selectType = document.getElementById('tipoValidacao')
 
 
 const verifyInfo =  () =>{
     console.log('Verificando informações')
     const email = input.value
-    
+
     if(isEmail(email)){
         resultado.innerHTML = 'Email válido'
     }else{
@@ -18,5 +19,6 @@ const verifyInfo =  () =>{
 }
 
 button.addEventListener('click', () => {
+    console.log(selectType.value);
     verifyInfo();
 })
