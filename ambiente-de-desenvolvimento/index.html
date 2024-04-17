@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPF VALIDATOR</title>
+</head>
+<body>
+    <main>
+    <h1> CPF VALIDATOR </h1>
+    <form id="formValidacao">
+        <label for="texto">Texto para validar:</label>
+        <input type="text" id="texto" name="texto" required><br><br>
+
+        <label for="tipoValidacao">Escolha o tipo de validação:</label>
+        <select id="tipoValidacao" name="tipoValidacao">
+            <option value="email">E-mail</option>
+            <option value="numero">Número</option>
+            <option value="cep">CEP</option>
+        </select><br><br>
+
+        <button type="button">Validar</button>
+    </form>
+
+    <div id="resultado">Resultado da validação aparecerá aqui.</div>
+    </main>
+</body>
+<script type="module" src="./src/main.js"></script>
+</html>

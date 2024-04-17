@@ -1,0 +1,22 @@
+body {
+    background-color: #505050;
+    color: red;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main {
+    min-width: 600px;
+    background-color: aliceblue;
+}
+
+form {
+    background-color: yellow;
+    margin: 10px;
+    padding: 10px;
+}
