@@ -7,7 +7,6 @@ const buttonRenderQuote = document.getElementById('button-fetch');
 const fetchDummyJson = async () => {
     const fetchDummy = await fetch('https://dummyjson.com/quotes/random');
     const fetchDummyJson = await fetchDummy.json();
-    console.log(fetchDummyJson);
 
     
     divRender.innerHTML = fetchDummyJson.quote;
